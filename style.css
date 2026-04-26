@@ -493,31 +493,3 @@ img {
 .project-card:hover img {
   transform: scale(1.05);
 }
-
-/* BEFORE / AFTER LABELS */
-.project-card::before {
-  content: "BEFORE";
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  background: rgba(0,0,0,0.7);
-  padding: 6px 10px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
-
-.project-card::after {
-  content: "AFTER";
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: var(--gold);
-  color: #111;
-  padding: 6px 10px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
