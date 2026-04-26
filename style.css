@@ -338,7 +338,7 @@ img {
   bottom: 98px;
 
   width: min(380px, calc(100vw - 32px));
-  max-height: 70vh; /* 🔥 FIX */
+  max-height: 70vh;
 
   background: #111318;
   border: 1px solid var(--line);
@@ -346,10 +346,9 @@ img {
   box-shadow: 0 28px 90px rgba(0,0,0,0.48);
 
   z-index: 101;
-  display: none;
 
-  display: flex;
-  flex-direction: column;
+  display: none;              /* ✅ ONLY display rule */
+  flex-direction: column;     /* ✅ keep layout ready */
 }
 
 .chat-widget.open {
