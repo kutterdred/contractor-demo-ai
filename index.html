@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Example Roofing & Siding | Edmonton</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <span class="brand-mark">ER</span>
+      <div>
+        <h1>Example Roofing & Siding</h1>
+        <p>Edmonton • Roofing • Siding • Restoration</p>
+      </div>
+    </div>
+    <a href="tel:7800000000" class="header-call">Call Now</a>
+  </div>
+</header>
+
+<section class="hero">
+  <img src="assets/hero-hardie-home.jpg" class="hero-img" alt="Edmonton exterior renovation home">
+  <div class="hero-shade"></div>
+
+  <div class="container hero-content">
+    <p class="eyebrow">Built for Alberta Weather</p>
+    <h2>Roofing & Siding in Edmonton</h2>
+    <p class="hero-text">Reliable exterior work that turns problems into clean finished homes.</p>
+
+    <div class="hero-actions">
+  <a href="tel:7800000000" class="btn primary">Call Now</a>
+  <a href="#quote" class="btn secondary">Get Free Quote</a>
+
+  <a href="https://roofr.com/estimator" target="_blank" class="btn primary">
+  Get Instant Roof Quote (Demo)
+  </a>
+</div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <p class="section-kicker">Before & After</p>
+    <h2>Real Results</h2>
+
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="assets/roof-before-after.jpg" alt="Roof before and after">
+        <div class="project-content">
+          <h3>Roof Replacement</h3>
+          <p>From worn shingles to a clean, durable roof.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/siding-before-after.jpg" alt="Siding before and after">
+        <div class="project-content">
+          <h3>Siding Upgrade</h3>
+          <p>Modern exterior finish that boosts curb appeal.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/fire-restoration-before-after.jpg" alt="Fire restoration before and after">
+        <div class="project-content">
+          <h3>Fire Restoration</h3>
+          <p>Repairable damage restored cleanly and professionally.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services">
+  <div class="container">
+    <p class="section-kicker">Services</p>
+    <h2>What This Site Can Sell</h2>
+
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Roofing</h3>
+        <p>Repair, replacement, leaks, storm damage.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Siding</h3>
+        <p>Exterior upgrades, modern finishes, clean installs.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Restoration</h3>
+        <p>Fire, weather, and exterior damage repair.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="quote" class="quote-section">
+  <div class="container quote-grid">
+    <div>
+      <p class="section-kicker">Lead Capture</p>
+      <h2>Get a Free Quote</h2>
+      <p>Use this form as a demo lead collector. Later it can send leads to email, text, CRM, or a spreadsheet.</p>
+    </div>
+
+    <form id="leadForm" class="quote-form">
+      <input type="text" placeholder="Name" required>
+      <input type="tel" placeholder="Phone" required>
+
+      <select required>
+        <option value="">What do you need?</option>
+        <option>Roofing</option>
+        <option>Siding</option>
+        <option>Restoration</option>
+      </select>
+
+      <textarea placeholder="Tell us about the project"></textarea>
+
+      <button type="submit">Request Quote</button>
+      <p id="formMessage"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>Example Roofing & Siding • Edmonton & Surrounding Areas</p>
+  </div>
+</footer>
+
+<!-- Floating AI Chat -->
+<button id="chatToggle" class="chat-toggle" aria-label="Open chat">
+  <span>AI Chat</span>
+</button>
+
+<div id="chatWidget" class="chat-widget">
+  <div class="chat-header">
+    <div>
+      <strong>Quote Assistant</strong>
+      <p>Usually replies instantly</p>
+    </div>
+    <button id="chatClose" aria-label="Close chat">×</button>
+  </div>
+
+  <div id="chatbox" class="chatbox"></div>
+
+  <div class="quick-replies">
+    <button data-msg="I need roofing help">Roofing</button>
+    <button data-msg="I need siding help">Siding</button>
+    <button data-msg="I have restoration damage">Restoration</button>
+  </div>
+
+  <div class="chat-input-row">
+    <input id="chatInput" placeholder="Type your message...">
+    <button id="sendChat">Send</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
